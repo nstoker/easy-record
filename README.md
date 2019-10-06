@@ -1,10 +1,13 @@
 # Easy Record
+
 #### v0.1.1.alpha2
+
 Easy Record (easy_record) is a lightweight gem based on ActiveRecord, you can relate models only so
 far, but check te Features / Known issues to see what is planned to do. You can also open issues and
 PRs.
 
 ## Installation
+
 From terminal
 
 `gem install easy-record`
@@ -14,6 +17,7 @@ In Gemfile
 `gem 'easy-record', '~> 0.1.1.alpha2'`
 
 ## Features / Known issues
+
 - [x] Models associations.
   - [x] `belongs_to`.
   - [x] `has_many`.
@@ -34,6 +38,7 @@ In Gemfile
   - [ ] Delete single records and untrack them.
 
 ## Usage
+
 ```ruby
 require 'easy_record'
 class Person < EasyRecord
@@ -77,10 +82,10 @@ toy.owner.owner # => person
 ```
 
 ## Save
+
 ```ruby
 ClassName.save_to_csv # Will save all tracked instances
 ClassName.load_from_csv # Will load and track all rows in csv (CSV has headers)
 
 instance.save # Not working yet
 ```
-
